@@ -22,31 +22,30 @@ console.log(findNum(numbers, a => a >= 18));
 //--------------------------EVERY------------------------//
 function EveryNum(numbers, func) {
     for (let index = 0; index < numbers.length; index++) {
-        if (func(numbers[index])) {
-            continue          
-        }
-        else{
+        if (func(numbers[index]))
+            continue;
+        else
             return false;
-        }
-        
+
+
     }
     return true;
 }
-console.log(EveryNum(numbers, a => a>=18));
+console.log(EveryNum(numbers, a => a >= 18));
 //-----------------------SOME------------------------//
 function SomeNum(numbers, func) {
     for (let index = 0; index < numbers.length; index++) {
         if (func(numbers[index])) {
-            return true;         
+            return true;
         }
-        else{
+        else {
             return false;
         }
-        
+
     }
     return true;
 }
-console.log(SomeNum(numbers, a => a>=18));
+console.log(SomeNum(numbers, a => a >= 18))
 
 
 
