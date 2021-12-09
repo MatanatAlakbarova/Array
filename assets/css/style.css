@@ -1,0 +1,35 @@
+#demo1 {
+  color: blue;
+  font-size: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+}
+
+#demo2 {
+  color: #831a63;
+  font-size: 25px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+}
+
+#demo3 {
+  color: #124d0c;
+  font-size: 35px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+}
+
+#demo4 {
+  color: #d63a13;
+  font-size: 35px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  width: 20%;
+}
