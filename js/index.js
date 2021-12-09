@@ -19,6 +19,34 @@ function findNum(numbers, func) {
     }
 }
 console.log(findNum(numbers, a => a >= 18));
+//--------------------------EVERY------------------------//
+function EveryNum(numbers, func) {
+    for (let index = 0; index < numbers.length; index++) {
+        if (func(numbers[index])) {
+            continue          
+        }
+        else{
+            return false;
+        }
+        
+    }
+    return true;
+}
+console.log(EveryNum(numbers, a => a>=18));
+//-----------------------SOME------------------------//
+function SomeNum(numbers, func) {
+    for (let index = 0; index < numbers.length; index++) {
+        if (func(numbers[index])) {
+            return true;         
+        }
+        else{
+            return false;
+        }
+        
+    }
+    return true;
+}
+console.log(SomeNum(numbers, a => a>=18));
 
 
 
@@ -45,7 +73,7 @@ function findAge(ages, minAge) {
     }
 };
 findAge(ages, minAge);
-//-----------------------------EVERY-----------------------//
+//-----------------------------EVERY-2----------------------//
 function everyAge(ages, minAge) {
     for (let index = 0; index < ages.length; index++) {
         if (ages[index] < minAge) {
@@ -58,7 +86,7 @@ function everyAge(ages, minAge) {
     }
 }
 everyAge(ages, minAge);
-//------------------------------SOME-------------------------//
+//------------------------------SOME-2------------------------//
 function someAge(ages, minAge) {
     for (let index = 0; index < ages.length; index++) {
         if (ages[index] >= minAge) {
